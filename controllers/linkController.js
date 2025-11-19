@@ -37,7 +37,7 @@ async function create(req, res) {
     }
   }
   try {
-    const base = process.env.PUBLIC_BASE_URL || `http://localhost:${process.env.PORT || 4000}`;
+    const base = process.env.PUBLIC_BASE_URL;
     const shortUrl = `${base}/${code}`;
     await Link.createLink(code, url, shortUrl);
     res.status(201).json({ code, url, shortUrl });
