@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { toast, Toaster } from 'react-hot-toast';
 
- const notify = (msg) => toast(msg, { duration: 3000 });
 
 function isValidUrl(url) {
   try {
@@ -15,7 +14,7 @@ function isValidUrl(url) {
 function isValidCode(code) {
   return /^[A-Za-z0-9]{6,8}$/.test(code);
 }
-
+export const notify = (msg) => toast(msg, { duration: 3000 });
 export default function LinkForm({ onSubmit }) {
   const [url, setUrl] = useState(() => localStorage.getItem('tl_form_url') || '');
   const [code, setCode] = useState(() => localStorage.getItem('tl_form_code') || '');

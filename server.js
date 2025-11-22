@@ -15,10 +15,10 @@ app.use(cors({ origin: process.env.FRONTEND_ORIGIN || 'http://localhost:3000' })
 app.use(express.json());
 
 // Routes
+app.use('/', redirectRoutes);
 app.use('/', healthRoutes);
 app.use('/api', apiRoutes);
 // Redirect last so it doesn't capture other routes
-app.use('/', redirectRoutes);
 
 initDb()
   .then(() => {

@@ -1,4 +1,4 @@
-const API_BASE =  'https://url-app-bnwh.onrender.com';
+const API_BASE =  'http://localhost:4000';
 
 export async function fetchLinks() {
   const res = await fetch(`${API_BASE}/api/links`);

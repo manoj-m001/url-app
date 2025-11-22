@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import { toast, Toaster } from 'react-hot-toast';
-const notify = (msg) => toast(msg, { duration: 3000 });
+import {notify}  from './LinkForm.jsx';
+
 function formatTime(t) {
   if (!t) return '—';
   try {
@@ -33,7 +33,6 @@ export default function LinkTable({ items, onDelete, sortBy, sortDir, onToggleSo
 
   return (
     <div className="table-wrapper">
-    <Toaster position="bottom-left" reverseOrder={false} />
 
       <table className="table">
         <thead>
@@ -61,7 +60,7 @@ export default function LinkTable({ items, onDelete, sortBy, sortDir, onToggleSo
                 <td>
                   <div className="row-actions">
                     <button className="button" onClick={() => copyText(shortUrl)}>Copy</button>
-                    <a className="button" href={shortUrl} target="_blank" rel="noreferrer">Open</a>
+                    <a className="button" onClick={()=>notify('redirecting')} href={shortUrl} target="_blank" rel="noreferrer">Open</a>
                     <button className="button danger" onClick={() => onDelete(l.code)}>Delete</button>
                   </div>
                 </td>

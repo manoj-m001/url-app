@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { createLink, deleteLink, fetchLinks } from "../api";
 import LinkForm from "../components/LinkForm";
 import LinkTable from "../components/LinkTable";
-import toast, { Toaster } from 'react-hot-toast';
+import {notify } from '../components/LinkForm.jsx';
 
 export default function Dashboard() {
   const [links, setLinks] = useState(() => {
@@ -13,7 +13,6 @@ export default function Dashboard() {
       return [];
     }
   });
-  const notify = (msg) => toast(msg, { duration: 3000 });
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -139,7 +138,6 @@ export default function Dashboard() {
 
   return (
     <div className="page">
-      <Toaster position="bottom-left" reverseOrder={false} />
       <div className="panel">
         <h2>Create a short link</h2>
         <LinkForm onSubmit={handleCreate} />
