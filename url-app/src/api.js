@@ -1,4 +1,4 @@
-const API_BASE =  'http://localhost:4000';
+const API_BASE =  process.env.REACT_APP_API_BASE;
 
 export async function fetchLinks() {
   const res = await fetch(`${API_BASE}/api/links`);

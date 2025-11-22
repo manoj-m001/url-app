@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 const {notify} = require('../components/LinkForm.jsx');
 
-const API_BASE = 'http://localhost:4000';
+const API_BASE = process.env.REACT_APP_API_BASE;
 
 export default function RedirectPage() {
   const { code } = useParams();
