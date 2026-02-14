@@ -8,7 +8,7 @@ export default function Landing() {
           <h2>One click to cleaner links</h2>
           <p className="hero-subtitle">
             Turn long, messy URLs into short, trusted links with instant stats.
-            Built to be fast, simple, and easy to show in a portfolio.
+            Built to be fast, simple, and easy.
           </p>
           <div className="hero-actions">
             <Link to="/dashboard" className="button primary">
@@ -87,7 +87,7 @@ export default function Landing() {
         <div>
           <h3>Ready to ship cleaner links?</h3>
           <p>
-            Start shortening in one click and keep your resume URLs polished.
+            Start shortening in one click and keep your URLs polished.
           </p>
         </div>
         <Link to="/dashboard" className="button primary">
