@@ -95,6 +95,7 @@ body {
   border-radius: 8px;
   padding: 8px 12px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button.primary { background: var(--primary); border-color: #1d4ed8; }
