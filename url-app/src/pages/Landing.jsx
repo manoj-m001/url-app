@@ -37,15 +37,15 @@ export default function Landing() {
             </div>
             <div className="kv">
               <span className="label">Short</span>
-              <span className="mono">tiny.lk/clean</span>
+              <span className="mono">url-app-nine.vercel.app/clean</span>
             </div>
             <div className="hero-stats">
               <div>
-                <div className="stat-value">128</div>
+                <div className="stat-value">2917</div>
                 <div className="stat-label">Clicks</div>
               </div>
               <div>
-                <div className="stat-value">2.1s</div>
+                <div className="stat-value">500ms</div>
                 <div className="stat-label">Avg. redirect</div>
               </div>
               <div>
