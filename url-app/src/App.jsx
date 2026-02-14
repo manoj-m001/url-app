@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
+import Landing from './pages/Landing';
 import StatsPage from './pages/StatsPage';
 import RedirectPage from './pages/RedirectPage';
 function App() {
@@ -9,15 +10,17 @@ function App() {
       <div className="app-container">
         <header className="app-header">
           <div className="header-inner">
-            <h1 className="brand">TinyLink</h1>
+            <Link to="/" className="brand">TinyLink</Link>
             <nav>
-              <Link to="/" className="nav-link">Dashboard</Link>
+              <Link to="/" className="nav-link">Home</Link>
+              <Link to="/dashboard" className="nav-link">Dashboard</Link>
             </nav>
           </div>
         </header>
         <main className="app-main">
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<Landing />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/code/:code" element={<StatsPage />} />
             <Route path="/:code" element={<RedirectPage />} />
           </Routes>
