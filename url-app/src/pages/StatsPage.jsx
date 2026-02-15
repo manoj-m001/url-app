@@ -30,7 +30,7 @@ export default function StatsPage() {
       <div className="panel">
         <div className="panel-header">
           <h2>Stats for <span className="mono">{code}</span></h2>
-          <RouterLink className="button" to="/">Back</RouterLink>
+          <RouterLink className="button" to="/dashboard">Back</RouterLink>
         </div>
         {loading && <div className="status">Loading…</div>}
         {error && <div className="status error">{error}</div>}
