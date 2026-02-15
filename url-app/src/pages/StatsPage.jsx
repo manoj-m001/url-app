@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link as RouterLink } from 'react-router-dom';
 import { getLinkStats } from '../api';
-
+import SpotlightCard from './SpotlightCard';
 export default function StatsPage() {
   const { code } = useParams();
   const [data, setData] = useState(null);
@@ -26,6 +26,8 @@ export default function StatsPage() {
   }, [code]);
 
   return (
+        <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.3)">
+    
     <div className="page">
       <div className="panel">
         <div className="panel-header">
@@ -64,5 +66,6 @@ export default function StatsPage() {
         )}
       </div>
     </div>
+    </SpotlightCard>
   );
 }
