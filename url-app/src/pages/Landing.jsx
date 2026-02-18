@@ -68,7 +68,7 @@ export default function Landing() {
         <div className="feature-card panel">
           <h3>Actionable stats</h3>
           <p>
-         Track total clicks and recent activity in one place. Stay informed about how your links are performing at any time. </p>
+            A
         </div>
         <div className="feature-card panel">
           <h3>Fast refresh</h3>
