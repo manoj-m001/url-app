@@ -62,24 +62,18 @@ export default function Landing() {
       <section className="feature-grid">
         <div className="feature-card panel">
           <h3>Smart defaults</h3>
-          <p>
-            Create links in seconds with optional custom codes. The UI keeps
-            everything readable for sharing in resumes and portfolios.
+          <p>Create short links in seconds, with the option to customize them your way. The clean, intuitive interface keeps everything organized and easy to share.
           </p>
         </div>
         <div className="feature-card panel">
           <h3>Actionable stats</h3>
           <p>
-            Track total clicks and recent activity, so you can share engagement
-            numbers during interviews or demos.
-          </p>
+         Track total clicks and recent activity in one place. Stay informed about how your links are performing at any time. </p>
         </div>
         <div className="feature-card panel">
           <h3>Fast refresh</h3>
           <p>
-            Updates are instant with refresh controls and local caching for a
-            smoother experience on every visit.
-          </p>
+         Experience real-time updates with smooth refresh controls and local caching, ensuring fast performance every time you visit. </p>
         </div>
       </section>
 
