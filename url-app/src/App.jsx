@@ -23,7 +23,7 @@ function App() {
                 Dashboard
               </Link>
               <Link
-                to="https://github.com/manoj-m001/url-app"
+                to="https://github.com/manoj-m001"
                 className="nav-link"
               >
                  <FontAwesomeIcon icon={faGithub} size="lg" />
