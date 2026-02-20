@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 export default function Landing() {
   return (
     <div className="landing">
       <section className="hero">
         <div className="hero-content">
-          <h2>One click to cleaner links</h2>
+          <h2>One click to cleaner links
+          </h2>
+          
           <p className="hero-subtitle">
             Turn long, messy URLs into short, trusted links with instant stats.
             Built to be fast, simple, and easy.
@@ -86,9 +90,10 @@ export default function Landing() {
           </p>
         </div>
         <Link to="/dashboard" className="button primary">
-          Open dashboard
-        </Link>
-      </section>
+          Open dashboard{"   "}
+<FontAwesomeIcon icon={faAnglesRight} fade size="lg"/>    
+</Link>
+</section>
     </div>
   );
 }
